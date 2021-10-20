@@ -1,0 +1,15 @@
+{
+  "extends": "@tsconfig/svelte/tsconfig.json",
+
+  "compilerOptions": {
+    "module": "ESNext",
+    "lib": ["ESNext", "DOM", "DOM.Iterable", "WebWorker"],
+    "rootDir": "src",
+    "strict": true,
+    "types": ["node", "svelte"],
+    "typeRoots": ["./node_modules/@types"]
+  },
+
+  "include": ["src/**/*"],
+  "exclude": ["node_modules/*", "public/*"]
+}
