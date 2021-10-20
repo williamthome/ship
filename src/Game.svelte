@@ -116,6 +116,13 @@
     gameOver = false
     animate()
     addListeners()
+    alert(`Use the keyboard to play:
+    - Space: shot
+    - Arrow keys: move
+
+  At the top left is your life and at top right your score.
+
+  Have fun! :D`)
   }
 
   const showGameOver = (): void => {
@@ -123,7 +130,7 @@
     gameOver = true
   }
 
-  onMount(() => init())
+  onMount(init)
 
   onDestroy(() => removeListeners())
 
