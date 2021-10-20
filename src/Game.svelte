@@ -27,7 +27,7 @@
     },
   }
 
-  const everyinterval = (n: number): boolean => (timer / n) % 1 === 0
+  const everyinterval = (n: number): boolean => (timer * (timer / n)) % 1 === 0
 
   const animate = (): void => {
     animateId = requestAnimationFrame(animate)
